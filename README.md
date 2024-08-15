@@ -1,2 +1,2 @@
 # LevenTextSuggester
-This is a simple text suggester made using Levenshtein distance algorithm.
+This is a simple text suggester made using Levenshtein distance algorithm. Levenshtein distance (or commonly known as "Edit distance") is the minimum number of edits necessary for a given string to mach another given string. In this application the Levenshtein distance between the input and a list of strings is calculated. Then the list is sorted based on the distance and the first few are displayed.

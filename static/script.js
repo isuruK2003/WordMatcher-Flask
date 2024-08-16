@@ -7,8 +7,7 @@ async function loadData() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ /* Any necessary data to be sent with POST */ })
+            }
         });
 
         if (!response.ok) {
@@ -34,26 +33,6 @@ function sortObjectArray(arrayOfObjects, key) {
         }
     });
 }
-
-// function myDis(str1, str2, charNum) {
-//     let str1Len = str1.length;
-//     let str2Len = str2.length;
-    
-//     // Base Case
-//     if (charNum > str1Len - 1 || charNum > str2Len - 1) {
-//         return Math.abs(str1Len - str2Len);
-//     }
-    
-//     let str1Char = str1[charNum];
-//     let str2Char = str2[charNum];
-    
-//     let val = 0;
-//     if (str1Char != str2Char) {
-//         val = 1;
-//     }
-
-//     return val + myDis(str1, str2, charNum + 1);
-// }
 
 function levDis(str1, str2) {
     const len1 = str1.length;
@@ -128,3 +107,23 @@ function main() {
 }
 
 document.addEventListener("DOMContentLoaded", main);
+
+// function myDis(str1, str2, charNum) {
+//     let str1Len = str1.length;
+//     let str2Len = str2.length;
+    
+//     // Base Case
+//     if (charNum > str1Len - 1 || charNum > str2Len - 1) {
+//         return Math.abs(str1Len - str2Len);
+//     }
+    
+//     let str1Char = str1[charNum];
+//     let str2Char = str2[charNum];
+    
+//     let val = 0;
+//     if (str1Char != str2Char) {
+//         val = 1;
+//     }
+
+//     return val + myDis(str1, str2, charNum + 1);
+// }

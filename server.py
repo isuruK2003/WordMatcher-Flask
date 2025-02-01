@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-app.config["words_file"] = "static/wiktionary.txt"
+app.config["words_file"] = "./static/wiktionary.txt"
 
 @app.route("/")
 def index():

@@ -3,12 +3,7 @@ let words = [];
 
 async function loadData() {
     try {
-        const response = await fetch(wordsApi, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
+        const response = await fetch(wordsApi);
 
         if (!response.ok) {
             throw new Error('Network response was not ok');
